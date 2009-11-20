@@ -1,3 +1,4 @@
+/* version 2ed */
 jetpack.future.import("storage.simple");
 jetpack.future.import("slideBar");
 var storage = jetpack.storage.simple;
