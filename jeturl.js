@@ -1,4 +1,3 @@
-/* version 2ed */
 jetpack.future.import("storage.simple");
 jetpack.future.import("slideBar");
 var storage = jetpack.storage.simple;
@@ -13,7 +12,7 @@ function add_bookmark(storage){
    reflesh(slider);
 }
 jetpack.statusBar.append({
-   html: "add!",
+   html: '<span style="background: url(http://moon.cse.yzu.edu.tw/~s951440/jetpack/status_add.ico) 3px center no-repeat; padding-left: 20px;line-height: 23px;" />',
    onReady: function(widget){
       $(widget).click(function()
         {add_bookmark(storage);});
@@ -40,9 +39,9 @@ function reflesh(slider){
 }}
 jetpack.slideBar.append({ 
 	width: 180,
+	icon: "http://moon.cse.yzu.edu.tw/~s951440/jetpack/status_add.ico",
 	persist: true,
 	html:<html><style><![CDATA[BODY {background-color:rgb(214,221,229);font-size:11px;margin-left:-15%;}.dtab{cursor: pointer;background-color:#ADD8E6;height:30px;}.b1{cursor: pointer;}]]></style><body><ol class="test"></ol></body></html>,
-    onReady: function (){},
 	onClick: function (slider) {
        reflesh(slider);
     }    
